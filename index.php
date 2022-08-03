@@ -1,3 +1,4 @@
+<?php setcookie('nombre', $_COOKIE['nombre'], time() - 4800); //Destroy cookies ?>
 <html>
 
 <head>

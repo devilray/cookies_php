@@ -13,6 +13,12 @@
     echo "No has introducido ningún nombre = {NULL}.";
   }
 
+  //borrar cookie - Parte 3
+  //Se borrar automáticamente cuando expiran su tiempo o bien poniendo el tiempo en negativo
+  //Emplear al hacer un logout en la sesión del usuario
+  //setcookie('nombre', '', time() - 1000);
+  ?> <a href="index.php">Salir del sistema</a> <?php
+  
 ?>
 
 <?php
