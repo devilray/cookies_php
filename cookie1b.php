@@ -1,6 +1,4 @@
 <?php
-  //echo "<h1>Cookies con PHP</h1>";  
-
   //crear una cookie
   //setcookie('juanico', 'Juan', time() + (86400 * 30), "/"); // 86400 = 1 day
 
@@ -8,10 +6,11 @@
   $nombre = $_POST['nombre'];
   setcookie('nombre', $nombre, time() + 4800);
 
+  //leer la cookie si existe - Parte 2
   if(isset($_COOKIE['nombre'])){
-    echo "Hola " . $_COOKIE['nombre'] . "!";
+    echo "El valor de la cookie es {" . $_COOKIE['nombre'] . "}";
   } else {
-    echo "No has introducido ningún nombre.";
+    echo "No has introducido ningún nombre = {NULL}.";
   }
 
 ?>
